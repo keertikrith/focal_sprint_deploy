@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import {  Poppins, Rubik } from "next/font/google";
+import { Poppins, Rubik } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
@@ -16,14 +16,13 @@ const rubik = Rubik({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mdTaquiImam.vercel.app"),
+  metadataBase: new URL("https://focalsprint.com"),
   title: {
     default: siteConfig.name,
-    template: `%s - Software Engineer`,
+    template: `%s - Focal Sprint`,
   },
   description: siteConfig.description,
 
-  // added new keywords for seo
   keywords: [
     "Focal Sprint",
     "focalsprint",
@@ -60,7 +59,6 @@ export const metadata: Metadata = {
     "online training",
     "classroom training",
     "Bangalore",
-    "Chavin IT Solution Pvt Ltd",
     "IT solutions",
     "tech education",
     "consulting services",
@@ -69,33 +67,17 @@ export const metadata: Metadata = {
     "industry expertise",
     "client-centric",
     "cutting-edge solutions",
-    "empower businesses",
-    "empower individuals",
+    "digital transformation",
+    "enterprise solutions",
   ],
   authors: [
     {
-      name: "Phani Prasad",
-      url: "https://github.com/phanit.prasad",
+      name: "Focal Sprint",
+      url: "https://focalsprint.com",
     },
   ],
-  creator: "Phani Prasad",
+  creator: "Focal Sprint",
 
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: siteConfig.url,
-    title: siteConfig.name,
-    description: siteConfig.description,
-    images: [`${siteConfig.url}/og-image.png`],
-    siteName: siteConfig.name,
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    images: [`${siteConfig.url}/og-image.png`],
-    creator: "@Taquiimam14",
-  },
   icons: {
     icon: "/favicon.ico",
   },
